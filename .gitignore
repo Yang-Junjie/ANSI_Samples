@@ -19,6 +19,9 @@
 *.app
 *.run
 
+# keep model assets despite the *.obj object-file rule above
+!assets/*.obj
+
 build/
 bin/
 dist/
