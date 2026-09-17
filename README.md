@@ -65,3 +65,25 @@ build\samples\06_obj.exe path\to\model.obj
 
 - [stb_image](https://github.com/nothings/stb) — 图片解码，位于 `externals/stb`
 - [tiny_obj_loader](https://github.com/tinyobjloader/tinyobjloader) — OBJ 模型加载，位于 `externals/tiny_obj_loader.h`
+
+## 相关库与参考
+
+本项目是一个从零实现的教学示例。如果要在实际项目里做终端界面 / 图形，下面这些库更完整：
+
+| 库 | 语言 | 特点 |
+| --- | --- | --- |
+| [FTXUI](https://github.com/ArthurSonzogni/FTXUI) | C++ | 现代组件式 TUI：布局、widget、Canvas（Braille / 块字符）、truecolor、事件循环 |
+| [notcurses](https://github.com/dankamongmen/notcurses) | C | 功能最全的终端图形库：truecolor、sprite、像素级渲染，可直接显示图片 |
+| [libcaca](http://caca.zoy.org/wiki/libcaca) | C | 彩色字符画，把图片 / 视频转成 ASCII / ANSI |
+| [chafa](https://hpjansson.org/chafa/)（libchafa） | C | 把图片高质量转成 ANSI / kitty / sixel / 字符画 |
+| [termbox2](https://github.com/termbox/termbox2) | C | 轻量、单头文件的 TUI 输入输出封装 |
+| [cpp-terminal](https://github.com/jupyter-xeus/cpp-terminal) | C++ | 跨平台终端控制（光标、颜色、raw mode 等） |
+| [rang](https://github.com/agauniyal/rang) / [termcolor](https://github.com/ikalnytskyi/termcolor) | C++ | 单头文件的彩色文本（ANSI 前景 / 背景色） |
+| [ImTui](https://github.com/ggerganov/imtui) | C++ | 在终端里运行 Dear ImGui |
+| [ncurses](https://invisible-island.net/ncurses/) / [PDCurses](https://github.com/wmcbrine/PDCurses) | C | 经典 curses 库（Windows 可用 PDCurses） |
+
+补充：
+
+- 想要**高分辨率图像**，可以了解 **Sixel**、**Kitty graphics protocol**、**iTerm2 inline images** 等终端图形协议。
+- 图像转字符可以看 **libcaca** / **chafa**；要完全程序化绘制并控制每个单元格，**notcurses** 和 **FTXUI** 是最成熟的选择。
+
