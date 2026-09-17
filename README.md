@@ -78,7 +78,8 @@ build\samples\06_obj.exe path\to\model.obj
 | [chafa](https://hpjansson.org/chafa/)（libchafa） | C | 把图片高质量转成 ANSI / kitty / sixel / 字符画 |
 | [termbox2](https://github.com/termbox/termbox2) | C | 轻量、单头文件的 TUI 输入输出封装 |
 | [cpp-terminal](https://github.com/jupyter-xeus/cpp-terminal) | C++ | 跨平台终端控制（光标、颜色、raw mode 等） |
-| [rang](https://github.com/agauniyal/rang) / [termcolor](https://github.com/ikalnytskyi/termcolor) | C++ | 单头文件的彩色文本（ANSI 前景 / 背景色） |
+| [termcolor](https://github.com/ikalnytskyi/termcolor) | C++ | 单头文件、跨平台的彩色文本输出（ANSI 颜色 / 属性），可给流控制颜色 |
+| [rang](https://github.com/agauniyal/rang) | C++ | 单头文件的彩色文本（ANSI 前景 / 背景色） |
 | [ImTui](https://github.com/ggerganov/imtui) | C++ | 在终端里运行 Dear ImGui |
 | [ncurses](https://invisible-island.net/ncurses/) / [PDCurses](https://github.com/wmcbrine/PDCurses) | C | 经典 curses 库（Windows 可用 PDCurses） |
 
